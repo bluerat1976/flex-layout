@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    max-width: 80%;
+    height: 400px;
+    border: 1px solid #cccccc;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    border: 1px solid #cccccc;
+}
+
+.left div,
+.right div {
+    display: flex;
+    background-color: #274a79;
+    border: 1px solid #cccccc;  
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.left div {
+    flex: 1 1 50%;
+    height: 50%;
+}
+
+.right div {
+    flex: 1 1 30%;
+    height: 133,33px;
+    width: 33,33%;
+}
